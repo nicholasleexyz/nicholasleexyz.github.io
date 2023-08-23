@@ -1,0 +1,63 @@
+:root {
+  --purple-dark: rgba(44, 38, 51, 0.9);
+  --purple-mid: rgba(133, 110, 130, 1.0);
+  --purple-light: rgba(184, 152, 193, 1.0);
+  --grey-mid: rgba(188, 188, 184, 1.0);
+  --grey-light: rgba(236, 234, 229, 1.0);
+}
+
+html {
+  color-scheme: dark;
+  font-size: larger;
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(0deg, rgba(44, 38, 51, 0.9) 30%, rgba(236, 234, 229, 0.2) 100%), url('background.png');
+  background-size: 512px;
+  background-attachment: fixed;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.card {
+  background-color: rgba(44, 38, 51, 0.9);
+  width: 100%;
+  max-width: 1920px;
+  border: solid var(--purple-mid) 0.25rem;
+  border-radius: 0.5rem;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.portrait {
+  display: inline;
+  width: 15rem;
+  border-radius: 50%;
+  border: solid var(--grey-light) 0.25rem;
+}
+
+.welcome-text {
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.summary {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.summary-text {
+  padding: 2rem;
+}

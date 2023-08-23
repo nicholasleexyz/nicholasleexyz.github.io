@@ -54,6 +54,10 @@ const projects = `
   </ul>
 `;
 
+const contact = `
+  <a href="mailto:nicholasleexyz@gmail.com" target="_blank" >Contact Me</a>
+`;
+
 const outro = `
   <p>Thank you for visiting my Front End Developer Portfolio. Feel free to explore my projects and get in touch to discuss potential collaborations or just to say hello!</p>
 `;
@@ -64,6 +68,7 @@ document.querySelector('#app').innerHTML = `
       ${summary}
       ${aboutMe}
       ${projects}
+      ${contact}
       ${outro}
     </div>
   </div>

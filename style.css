@@ -19,7 +19,7 @@ body {
 #app {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(0deg, rgba(44, 38, 51, 0.9) 30%, rgba(236, 234, 229, 0.2) 100%), url('background.png');
+  background: linear-gradient(0deg, rgba(44, 38, 51, 0.9) 30%, rgba(236, 234, 229, 0.2) 100%), url('/background.png');
   background-size: 512px;
   background-attachment: fixed;
 }

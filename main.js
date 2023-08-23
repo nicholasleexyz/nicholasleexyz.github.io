@@ -13,7 +13,7 @@ const title = `
 const summary = `
 <div class="summary">
   <div style="justify-self: center; align-self: center">
-    <img src="portrait-temp.png" class="portrait"/>
+    <img src="/portrait-temp.png" class="portrait"/>
   </div>
   <div class="summary-text">
     <h1 class="welcome-text">Welcome to my Front End Developer Portfolio!</h1>
@@ -43,8 +43,10 @@ const experience= `
   Front-End Frameworks: Proficient in utilizing frameworks like React or Vue.js to create modular and reusable components that streamline development and enhance maintainability.
   Web Performance Optimization: Implementing techniques such as minification, lazy loading, and caching to enhance website performance, resulting in faster load times and a smoother user experience.
   Cross-Browser Compatibility: Testing and ensuring consistent functionality and appearance across different web browsers.
-
   </p>
+`;
+
+const projects = `
   <h2>Projects:</h2>
   <h3>Explore a diverse array of projects that showcase my skills and creativity, including:</h3>
   <ul>
@@ -61,7 +63,7 @@ document.querySelector('#app').innerHTML = `
     <div class="card">
       ${summary}
       ${aboutMe}
-      ${experience}
+      ${projects}
       ${outro}
     </div>
   </div>

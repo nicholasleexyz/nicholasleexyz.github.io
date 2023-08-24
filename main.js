@@ -5,6 +5,8 @@ const projectData = [
   {"project": "https://exodecode.com", "description" : "I make music as a hobby from time to time so I decided to make a music player for some of my tracks. Originally written in vanilla js but later was ported to react."},
   {"project": "https://alpacaattic.com", "description" : "Mock web store front made with vanilla js."},
   {"project": "https://funny-cendol-681c20.netlify.app/", "description" : "Procedural map generator written with vanilla javascript."},
+  {"project": "https://lighthearted-mooncake-7fc852.netlify.app/", "description" : "War Card Game App. Built with vanilla js."},
+  {"project": "https://musical-khapse-552528.netlify.app/", "description" : "Mock Plant Data App. Built with JQuery and Bootstrap"},
 ];
 
 const title = `

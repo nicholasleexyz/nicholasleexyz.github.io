@@ -1,4 +1,4 @@
-(function(){const o=document.createElement("link").relList;if(o&&o.supports&&o.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))a(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const r of t.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&a(r)}).observe(document,{childList:!0,subtree:!0});function s(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function a(e){if(e.ep)return;e.ep=!0;const t=s(e);fetch(e.href,t)}})();const c=[{project:"https://exodecode.com",description:"I make music as a hobby from time to time so I decided to make a music player for some of my tracks. Originally written in vanilla js but later ported to react.",preview:"/preview-exodecode.com.png"},{project:"https://alpacaattic.com",description:"Mock web store front made with vanilla js.",preview:"/preview-alpacaattic.com.png"},{project:"https://funny-cendol-681c20.netlify.app/",description:"Procedural map generator written with vanilla javascript.",preview:"/preview-funny-cendol-681c20.netlify.app.png"},{project:"https://lighthearted-mooncake-7fc852.netlify.app/",description:"War Card Game App. Built with vanilla js.",preview:"/preview-lighthearted-mooncake-7fc852.netlify.app.png"},{project:"https://musical-khapse-552528.netlify.app/",description:"Mock Plant Data App. Built with JQuery and Bootstrap",preview:"/preview-musical-khapse-552528.netlify.app.png"}],l=`
+(function(){const o=document.createElement("link").relList;if(o&&o.supports&&o.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))a(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const r of t.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&a(r)}).observe(document,{childList:!0,subtree:!0});function n(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function a(e){if(e.ep)return;e.ep=!0;const t=n(e);fetch(e.href,t)}})();const c=[{project:"https://exodecode.com",description:"I make music as a hobby from time to time so I decided to make a music player for some of my tracks. Originally written in vanilla js but later ported to react.",preview:"/preview-exodecode.com.png"},{project:"https://alpacaattic.com",description:"Mock web store front made with vanilla js.",preview:"/preview-alpacaattic.com.png"},{project:"https://funny-cendol-681c20.netlify.app/",description:"Procedural map generator written with vanilla javascript.",preview:"/preview-funny-cendol-681c20.netlify.app.png"},{project:"https://lighthearted-mooncake-7fc852.netlify.app/",description:"War Card Game App. Built with vanilla js.",preview:"/preview-lighthearted-mooncake-7fc852.netlify.app.png"},{project:"https://musical-khapse-552528.netlify.app/",description:"Mock Plant Data App. Built with JQuery and Bootstrap",preview:"/preview-musical-khapse-552528.netlify.app.png"}],l=`
 <div class="summary">
   <div style="justify-self: center; align-self: center">
     <img src="/portrait-temp.png" class="portrait"/>
@@ -20,15 +20,15 @@
 `,d=`
   <h2>Projects:</h2>
   <h3>Explore a diverse array of projects that showcase my skills and creativity, including:</h3>
-  <ul>
+  <ul style="display: grid; justify-items: left; align-items: start; gap: 1rem">
   ${c.map(i=>`
-    <div style="display: flex; margin-bottom: 2rem;">
+    <div style="display: flex; width: 100%; background: rgba(133, 110, 130, 0.5)">
       <img src="${i.preview}" class="preview-image">
       <li class="project-text"><a href="${i.project}" target="_blank">${i.project}</a> - ${i.description}</li>
     </div>
   `).join("")}
   </ul>
-`,n=`
+`,s=`
   <a href="mailto:nicholasleexyz@gmail.com" target="_blank" >Email Me</a>
 `,m=`
   <p>Thank you for visiting my Front End Developer Portfolio. Feel free to explore my projects and get in touch to discuss potential collaborations or just to say hello!</p>
@@ -37,9 +37,9 @@
     <div class="card">
       ${l}
       ${p}
-      ${n}
+      ${s}
       ${d}
-      ${n}
+      ${s}
       ${m}
     </div>
   </div>

@@ -2,11 +2,31 @@ import './node_modules/modern-normalize/modern-normalize.css'
 import './style.css'
 
 const projectData = [
-  {"project": "https://exodecode.com", "description" : "I make music as a hobby from time to time so I decided to make a music player for some of my tracks. Originally written in vanilla js but later was ported to react."},
-  {"project": "https://alpacaattic.com", "description" : "Mock web store front made with vanilla js."},
-  {"project": "https://funny-cendol-681c20.netlify.app/", "description" : "Procedural map generator written with vanilla javascript."},
-  {"project": "https://lighthearted-mooncake-7fc852.netlify.app/", "description" : "War Card Game App. Built with vanilla js."},
-  {"project": "https://musical-khapse-552528.netlify.app/", "description" : "Mock Plant Data App. Built with JQuery and Bootstrap"},
+  {
+    "project": "https://exodecode.com",
+    "description" : "I make music as a hobby from time to time so I decided to make a music player for some of my tracks. Originally written in vanilla js but later ported to react.",
+    "preview" : "/preview-exodecode.com.png"
+  },
+  {
+    "project": "https://alpacaattic.com",
+    "description" : "Mock web store front made with vanilla js.",
+    "preview" : "/preview-alpacaattic.com.png"
+  },
+  {
+    "project": "https://funny-cendol-681c20.netlify.app/",
+    "description" : "Procedural map generator written with vanilla javascript.",
+    "preview" : "/preview-funny-cendol-681c20.netlify.app.png"
+  },
+  {
+    "project": "https://lighthearted-mooncake-7fc852.netlify.app/",
+    "description" : "War Card Game App. Built with vanilla js.",
+    "preview" : "/preview-lighthearted-mooncake-7fc852.netlify.app.png"
+  },
+  {
+    "project": "https://musical-khapse-552528.netlify.app/",
+    "description" : "Mock Plant Data App. Built with JQuery and Bootstrap",
+    "preview" : "/preview-musical-khapse-552528.netlify.app.png"
+  },
 ];
 
 const title = `
@@ -52,12 +72,17 @@ const projects = `
   <h2>Projects:</h2>
   <h3>Explore a diverse array of projects that showcase my skills and creativity, including:</h3>
   <ul>
-  ${projectData.map(p => `<li><a href="${p.project}" target="_blank">${p.project}</a> - ${p.description}</li>`).join('')}
+  ${projectData.map(p => `
+    <div style="display: flex; margin-bottom: 2rem;">
+      <img src="${p.preview}" class="preview-image">
+      <li class="project-text"><a href="${p.project}" target="_blank">${p.project}</a> - ${p.description}</li>
+    </div>
+  `).join('')}
   </ul>
 `;
 
 const contact = `
-  <a href="mailto:nicholasleexyz@gmail.com" target="_blank" >Contact Me</a>
+  <a href="mailto:nicholasleexyz@gmail.com" target="_blank" >Email Me</a>
 `;
 
 const outro = `
@@ -69,6 +94,7 @@ document.querySelector('#app').innerHTML = `
     <div class="card">
       ${summary}
       ${aboutMe}
+      ${contact}
       ${projects}
       ${contact}
       ${outro}

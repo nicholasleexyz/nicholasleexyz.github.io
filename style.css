@@ -16,6 +16,11 @@ body {
   min-height: 100%;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
 #app {
   width: 100%;
   min-height: 100vh;
@@ -60,4 +65,15 @@ body {
 
 .summary-text {
   padding: 2rem;
+}
+
+.preview-image {
+  display: inline-block;
+  width: 256px;
+}
+
+.project-text {
+  display: inline-block;
+  /* border: solid red 1px; */
+  padding: 0 1rem;
 }

@@ -74,6 +74,6 @@ ul {
 
 .project-text {
   display: inline-block;
+  padding: 1rem;
   /* border: solid red 1px; */
-  padding: 0 1rem;
 }

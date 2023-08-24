@@ -71,14 +71,16 @@ const experience= `
 const projects = `
   <h2>Projects:</h2>
   <h3>Explore a diverse array of projects that showcase my skills and creativity, including:</h3>
-  <ul style="display: grid; justify-items: left; align-items: start; gap: 1rem">
-  ${projectData.map(p => `
-    <div style="display: flex; width: 100%; background: rgba(133, 110, 130, 0.5)">
-      <img src="${p.preview}" class="preview-image">
-      <li class="project-text"><a href="${p.project}" target="_blank">${p.project}</a> - ${p.description}</li>
-    </div>
-  `).join('')}
-  </ul>
+  <div style="display: flex; justify-content: center;">
+    <ul style="display: flex; flex-flow: column; gap: 1rem; width: fit-content">
+    ${projectData.map(p => `
+      <div style="display: flex; width: 100%; flex-wrap: wrap;">
+        <img src="${p.preview}" class="preview-image">
+        <li class="project-text"><a href="${p.project}" target="_blank">${p.project}</a> - ${p.description}</li>
+      </div>
+    `).join('')}
+    </ul>
+  </div>
 `;
 
 const contact = `

@@ -68,12 +68,17 @@ ul {
 }
 
 .preview-image {
-  display: inline-block;
-  width: 256px;
+  max-width: 256px;
+  /* margin: 0 auto; */
+  margin: 0 auto;
 }
 
 .project-text {
   display: inline-block;
+  /* margin-right: auto; */
+  margin: 0 auto;
   padding: 1rem;
-  /* border: solid red 1px; */
+  width: 100%;
+  max-width: 80ch;
+  background: rgba(133, 110, 130, 0.5);
 }

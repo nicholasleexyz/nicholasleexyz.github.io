@@ -3,6 +3,11 @@ import './style.css'
 
 const projectData = [
   {
+    "project": "https://mellow-bubblegum-042b96.netlify.app/",
+    "description" : "Sudoku game and editor",
+    "preview" : "/sudoku_create.png"
+  },
+  {
     "project": "https://exodecode.com",
     "description" : "I make music as a hobby from time to time so I decided to make a music player for some of my tracks. Originally written in vanilla js but later ported to react.",
     "preview" : "/preview-exodecode.com.png"
@@ -45,14 +50,10 @@ const summary = `
 `;
 
 const aboutMe = `
-  <h2>Who Am I:</h2>
-  <p> I'm a dedicated and enthusiastic front-end developer with a keen eye for design and an insatiable curiosity for emerging web technologies. My mission is to seamlessly merge aesthetics with functionality, producing websites that not only look great but also provide an exceptional user experience.  </p>
-  <p> I'm thrilled to present a compilation of my passion for crafting captivating and intuitive web experiences. With a strong foundation in HTML, CSS, and JavaScript, I've embarked on a journey to transform ideas into visually stunning and functional digital realities. This portfolio showcases a selection of projects that highlight my expertise and creativity in front-end development.  </p>
-
-  <h2>What I Do:</h2>
-  <p>
-    My primary focus is on creating responsive and interactive websites that adapt fluidly to various devices and screen sizes. I excel in crafting user interfaces that are not only visually pleasing but also optimized for speed and accessibility. Leveraging the latest tools and frameworks, I bring life to static designs through animations, transitions, and engaging user interactions.
-  </p>
+  <h2>Who I am:</h2>
+  <p>A seasoned web developer with a substantial five years of experience in software development. My professional journey is driven by a profound passion for continuous learning. I possess a comprehensive skill set covering web and game development and my portfolio showcases my creativity and passion for problem solving.  I'm all about staying on top of the latest trends and technologies.  I am dedicated to crafting efficient and responsive web solutions that elevate user experiences.  I am currently seeking to bring my expertise and enthusiasm to a dynamic team of like minded developers.</p>
+  <h2>What I do</h2>
+  <p>My creativity and passion for problem solving is reflected in the games and web apps I design. I enjoy being productive and efficient, for example I learned vim key bindings to be more ergonomic and to save time typing. I'm always working on a software project, be that a game or web app. Because learning and growth is important to me I recently completed the front end bootcamp at promineo tech. I also plan on taking the back end bootcamp at promineo tech in the near future to pursue full stack development.</p>
 `;
 
 const experience= `
@@ -88,7 +89,7 @@ const contact = `
 `;
 
 const outro = `
-  <p>Thank you for visiting my Front End Developer Portfolio. Feel free to explore my projects and get in touch to discuss potential collaborations or just to say hello!</p>
+  <p>Thank you for visiting my Portfolio. Feel free to explore my projects and get in touch to discuss potential collaborations or just to say hello!</p>
 `;
 
 document.querySelector('#app').innerHTML = `

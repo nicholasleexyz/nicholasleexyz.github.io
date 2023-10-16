@@ -43,8 +43,7 @@ const summary = `
     <img src="/portrait-temp.png" class="portrait"/>
   </div>
   <div class="summary-text">
-    <h1 class="welcome-text">Welcome to my Front End Developer Portfolio!</h1>
-    <p>Hi I'm Nick! I like to make websites and code things. :p</p>
+    <h1 class="welcome-text">Welcome to my portfolio!</h1>
   </div>
 </div>
 `;

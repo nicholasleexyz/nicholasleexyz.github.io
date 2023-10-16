@@ -55,7 +55,10 @@ ul {
 .welcome-text {
   width: 100%;
   text-align: center;
-  text-decoration: underline;
+  border-radius: 0.5rem;
+  border: solid var(--purple-light) 0.25rem;
+  padding: 1rem;
+  background-color: var(--purple-dark);
 }
 
 .summary {

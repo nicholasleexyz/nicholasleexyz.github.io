@@ -6,7 +6,8 @@
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "license": "MIT",
   "devDependencies": {
@@ -22,6 +23,7 @@
   "dependencies": {
     "@solid-primitives/scroll": "^2.0.20",
     "daisyui": "^3.9.3",
+    "gh-pages": "^6.1.1",
     "solid-js": "^1.7.6"
   }
 }

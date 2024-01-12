@@ -10,6 +10,11 @@ const config: Config = {
   theme: {
     extend: {},
   },
+  daisyui:{
+    themes:[
+      "dracula",
+    ],
+  },
   plugins: [daisyui],                                                                                                        
 };
 
